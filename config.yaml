@@ -1,0 +1,16 @@
+credentials:
+  usernames:
+    admin:
+      name: admin
+      password: '$2b$12$4fkedWzoNikNT1oZTLvYduh5PUJx7MX1OpnIjebUd1v3vTz10o.B6'
+    analyst:
+      name: analyst
+      password: '$2b$12$4fkedWzoNikNT1oZTLvYduh5PUJx7MX1OpnIjebUd1v3vTz10o.B6'
+
+cookie:
+  name: my_cookie
+  key: some_signature_key
+  expiry_days: 1
+
+preauthorized:
+  emails: []

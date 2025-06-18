@@ -8,13 +8,13 @@ with open('config.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
 # ---- Initialize Authenticator ----
-authenticator = Authenticate(
+authenticator = stauth.Authenticate(
     config['credentials'],
     config['cookie']['name'],
     config['cookie']['key'],
-    config['cookie']['expiry_days'],
-    config['preauthorized']
+    config['cookie']['expiry_days']
 )
+
 
 # ---- Login UI ----
 name, authentication_status, username = authenticator.login("Login", location="main")
